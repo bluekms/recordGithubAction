@@ -12,4 +12,5 @@ jobs:
       - name: 디렉토리 출력!!
         run: ls -al
       - name: 파이썬 버전 출력!!
-        run: pythone -V
+        run: python -V
+
