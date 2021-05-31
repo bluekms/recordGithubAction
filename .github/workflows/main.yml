@@ -18,6 +18,10 @@ jobs:
       # <아무것도 없는 OS>에서 자동으로 우리의 코드를 클론하고 다운받아 실행하게 해주는 소스코드
       - uses: actions/checkout@v2
       # OS에서 실행할 이름
-      - name: 1. 파이썬 실행
+      - name: 1. 파일 목록 출력
       # OS에서 실행할 명령어
+        run: ls -al
+      - name: 2. 파이썬 키지 확인
+        run: pip list
+      - name: 3. 파이썬 실행
         run: python test.py
