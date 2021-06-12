@@ -9,4 +9,8 @@ jobs:
         env:
           NAME: "minseok.kang"
           ID: ${{github.actor}}
-        run: echo "내 이름은 $NAME, 내 아이디는 $ID 입니다."
+          AGE: 36
+          HUMAN: true
+        run: |
+          echo "내 이름은 $NAME, 내 아이디는 $ID 입니다."
+          echo "내 이름은 $NAME, 내 아이디는 $ID 입니다. 제 나이는 $AGE이고, 휴먼 : $HUMAN 입니다."
